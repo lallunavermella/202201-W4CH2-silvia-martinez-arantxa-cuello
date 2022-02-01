@@ -1,10 +1,13 @@
-const UsedLetters = () => {
+const UsedLetters = ({ letters }) => {
   return (
-    <ul className="used-letters">
-      <li className="used-letter">B,&nbsp;</li>
-      <li className="used-letter">B,&nbsp;</li>
-      <li className="used-letter">B</li>
-    </ul>
+    <>
+      <h2>Used Letters</h2>
+      <div className="letters-container">
+        {letters.map((letter) => (
+          <span> {letter} </span>
+        ))}
+      </div>
+    </>
   );
 };
 export default UsedLetters;

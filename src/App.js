@@ -7,13 +7,15 @@ import Wordarray from "./components/Wordarray/Wordarray";
 function App() {
   const word = "ESPIA";
 
+  const usedLetters = ["C", "D"];
+
+
   return (
     <div className="App">
       <Hangman />
       <Guessword word={word} />
       <section className="used-letters-container">
-        <h2>Used letters</h2>
-        <UsedLetters />
+        <UsedLetters letters={usedLetters} />
       </section>
       <section className="game-result">You're dead!</section>;
       <Wordarray />
