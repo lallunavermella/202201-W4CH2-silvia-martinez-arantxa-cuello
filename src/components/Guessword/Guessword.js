@@ -1,12 +1,18 @@
-const Guessword = () => {
+// props = { word: "ESPIA" }
+
+// let {word} = props
+// let word = props.word
+
+const Guessword = ({ word }) => {
+  const letters = word.split("");
+
   return (
-    <ul class="guess-letters">
-      <li class="guess-letter empty"></li>
-      <li class="guess-letter">A</li>
-      <li class="guess-letter empty"></li>
-      <li class="guess-letter">A</li>
-      <li class="guess-letter empty"></li>
+    <ul className="guess-letters">
+      {letters.map((letter) => (
+        <li className="guess-letter empty"></li>
+      ))}
     </ul>
   );
 };
+
 export default Guessword;

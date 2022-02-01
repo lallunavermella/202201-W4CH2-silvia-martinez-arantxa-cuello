@@ -6,7 +6,9 @@ import Wordarray from "./components/Wordarray/Wordarray";
 
 function App() {
   const word = "ESPIA";
+
   const usedLetters = ["C", "D"];
+
 
   return (
     <div className="App">
@@ -15,7 +17,7 @@ function App() {
       <section className="used-letters-container">
         <UsedLetters letters={usedLetters} />
       </section>
-      <section class="game-result">You're dead!</section>;
+      <section className="game-result">You're dead!</section>;
       <Wordarray />
     </div>
   );
