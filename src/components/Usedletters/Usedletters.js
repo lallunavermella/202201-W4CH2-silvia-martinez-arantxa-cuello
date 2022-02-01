@@ -1,9 +1,9 @@
 const UsedLetters = () => {
   return (
-    <ul class="used-letters">
-      <li class="used-letter">B,&nbsp;</li>
-      <li class="used-letter">B,&nbsp;</li>
-      <li class="used-letter">B</li>
+    <ul className="used-letters">
+      <li className="used-letter">B,&nbsp;</li>
+      <li className="used-letter">B,&nbsp;</li>
+      <li className="used-letter">B</li>
     </ul>
   );
 };
