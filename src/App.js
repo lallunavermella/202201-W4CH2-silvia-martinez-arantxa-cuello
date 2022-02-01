@@ -5,13 +5,15 @@ import Hangman from "./components/Hangman/Hangman";
 import Wordarray from "./components/Wordarray/Wordarray";
 
 function App() {
+  const word = "ESPIA";
+  const usedLetters = ["C", "D"];
+
   return (
     <div className="App">
       <Hangman />
-      <Guessword />
-      <section class="used-letters-container">
-        <h2>Used letters</h2>
-        <UsedLetters />
+      <Guessword word={word} />
+      <section className="used-letters-container">
+        <UsedLetters letters={usedLetters} />
       </section>
       <section class="game-result">You're dead!</section>;
       <Wordarray />
